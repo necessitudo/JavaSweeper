@@ -27,3 +27,7 @@ hs_err_pid*
 
 JavaSweeper.iml
 .idea/
+/src/META-INF/
+/out/
+out/
+src/META-INF/
