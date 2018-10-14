@@ -14,7 +14,7 @@ class Bomb
     void start()
     {
         bombMap = new Matrix(Box.ZERO);
-        for (int j = 0; j< totalBombs; j ++)
+        for (int j = 1; j< totalBombs; j ++)
         {
            placeBomb();
         }
@@ -53,5 +53,9 @@ class Bomb
             if(Box.BOMB != bombMap.get(around))
                 bombMap.set(around, bombMap.get(around).getNextNumberBox());
         }
+    }
+
+    public int getTotalBombs() {
+        return totalBombs;
     }
 }
